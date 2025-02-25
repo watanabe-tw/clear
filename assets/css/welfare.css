@@ -1,0 +1,54 @@
+#welfare .container {
+  padding-bottom: 8rem;
+}
+
+.welfare_contents {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--gray);
+}
+.welfare_contents h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline;
+  border-bottom: 4px solid #0f86ff;
+  letter-spacing: 0.2em;
+  line-height: 2;
+}
+
+.welfare_contents_text p {
+  padding: 2rem 0;
+}
+
+.welfare_wrap {
+  text-align: left;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+  grid-gap: 0 2.5%;
+}
+
+.welfare_contents_text {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  section#welfare {
+    margin-top: 10rem;
+  }
+
+  .welfare_wrap {
+    text-align: left;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .welfare_contents h2 {
+    font-size: 1.8rem;
+  }
+
+  .welfare_contents_text {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+}

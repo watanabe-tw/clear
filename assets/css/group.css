@@ -1,0 +1,137 @@
+#group .container {
+  padding-bottom: 8rem;
+}
+
+.group_info_wrap {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+  grid-gap: 0 2.5%;
+  text-align: left;
+}
+
+.group_info h2 {
+  font-size: 2.4rem;
+  border-bottom: 1px solid;
+}
+
+.group_info_wrap .group_info:nth-child(2) img,
+.group_info_wrap .group_info:nth-child(3) img {
+  width: 10rem;
+}
+
+.group_info_wrap .group_info:nth-child(3) .group_button_area {
+  background-color: unset;
+  background-image: linear-gradient(
+    115deg,
+    #b67b03 0%,
+    #daaf08 45%,
+    #fee9a0 70%,
+    #daaf08 85%,
+    #b67b03 90% 100%
+  );
+  border: unset;
+  color: var(--black);
+}
+.group_info_wrap .group_info:nth-child(2) .group_button_area {
+  background-color: #f39800;
+  border: 1px solid #f39800;
+}
+a.group_link {
+  display: block;
+}
+
+.group_info img {
+  width: 15rem;
+}
+
+.group_info h3 {
+  font-size: 1.6rem;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.group_info_content {
+  padding: 3rem 0;
+  text-align: left;
+  height: 34rem;
+}
+
+.group_img {
+  padding: 4rem 0;
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.group_img p {
+  font-size: 2.4rem;
+}
+
+.group_img p {
+  font-size: 2.4rem;
+}
+
+.group_info_content p {
+  font-size: 1.4rem;
+}
+
+.group_button_area {
+  margin: auto;
+  background-color: #0f86ff;
+  border: 1px solid #0f86ff;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  #group {
+    margin-top: 10rem;
+  }
+
+  .group_info_content {
+    padding: 2rem 0;
+    height: auto;
+  }
+
+  .group_info_wrap {
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .group_info h2 {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .group_info h3 {
+    font-size: 1.3rem;
+  }
+
+  .group_img {
+    padding: 0;
+    height: 15rem;
+  }
+
+  .group_info img {
+    width: 18rem;
+  }
+
+  .group_info_content p {
+    font-size: 1.1rem;
+  }
+
+  .group_button_area {
+    margin-top: 1.2rem;
+  }
+
+  .group_info {
+    margin-bottom: 4rem;
+  }
+}

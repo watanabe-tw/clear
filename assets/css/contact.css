@@ -1,0 +1,313 @@
+section#con {
+  margin-top: 10rem;
+}
+
+.contact_wrap {
+  display: flex;
+  gap: 0 5rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.line_contact {
+  background: #00b900;
+  width: 40%;
+  border-radius: 0.8rem;
+  padding: 3rem;
+  height: 100%;
+}
+
+.line_contact .title {
+  color: var(--white);
+}
+
+.form_contact {
+  background: var(--gray);
+  border: 3px solid var(--black);
+  width: 60%;
+  padding: 3rem;
+  border-radius: 0.8rem;
+}
+
+p.contatct_text {
+  margin: 5rem 0;
+  font-size: 1.6rem;
+}
+
+.line_contact p {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  color: var(--white);
+}
+
+a.line_btn {
+  background-color: var(--white);
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  margin: 5rem 0;
+  padding: 1.4rem 0;
+  font-size: 1.4rem;
+  display: block;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+.form_contents {
+  margin-top: 5rem;
+}
+
+.form_contents dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #c1d6d8;
+  padding: 1rem 0;
+}
+
+.radio_flex {
+  display: flex;
+  gap: 0 2rem;
+  align-items: center;
+}
+
+.form_contents dl:last-of-type {
+  border-bottom: 1px solid #c1d6d8;
+}
+
+label.form_radio {
+  display: flex;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.form_radio span {
+  font-size: 1.4rem;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+.form_contents dt {
+  width: 30%;
+  font-size: 1.4rem;
+}
+.form_contents dt span {
+  font-size: 1.2rem;
+  color: #ff4d33;
+}
+.form_contents dd {
+  width: 70%;
+}
+
+.form_contents dd textarea,
+.form_contents input[type="text"] {
+  border: none;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.8rem;
+  letter-spacing: 0.075em;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.privacy_link {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.privacy_link a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.submit_form_button {
+  padding: 3rem 0 1rem;
+}
+.submit_form_button input,
+.back_contact_check_form {
+  background-color: var(--blue);
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding: 1.4rem 0;
+  font-size: 1.4rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-weight: bold;
+  border-radius: 0.8rem;
+}
+
+.form_contents dd textarea {
+  height: 15rem;
+  resize: vertical;
+}
+
+.qa-container {
+  margin: 5rem auto 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.qa-list:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.question-title {
+  background: var(--gray);
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.question-title:before {
+  position: absolute;
+  display: block;
+  content: "Q";
+  top: 1.8rem;
+  left: 1.2rem;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.question-title:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 35%;
+  right: 22px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(135deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.question-title.open:after {
+  transform: rotate(-45deg);
+  top: 45%;
+}
+
+.answer-text {
+  border-left: 1px solid var(--gray);
+  border-right: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  display: none;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.answer-text p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.answer-text a {
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+}
+
+.answer-text:before {
+  position: absolute;
+  display: block;
+  content: "A";
+  top: 18px;
+  left: 12px;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact_wrap {
+    flex-direction: column;
+    gap: 3rem 0;
+  }
+
+  /* LINE */
+  .line_contact {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  p.contatct_text {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+  }
+
+  .line_contact p {
+    font-size: 1.3rem;
+    margin: 3rem 0;
+  }
+
+  a.line_btn {
+    margin: 3rem 0;
+  }
+
+  /* FORM */
+  .form_contact {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .form_contents {
+    margin-top: 3rem;
+  }
+
+  .form_contents dl {
+    display: block;
+  }
+
+  .form_contents dd {
+    width: 100%;
+  }
+
+  .form_contents dt {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .form_contents dt span {
+    font-size: 1.2rem;
+  }
+
+  .form_contents dd textarea,
+  .form_contents input[type="text"] {
+    font-size: 1.2rem;
+  }
+
+  .privacy_link {
+    font-size: 1.2rem;
+  }
+
+  .submit_form_button {
+    padding: 3rem 0;
+  }
+
+  .submit_form_button input,
+  .back_contact_check_form {
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
+  }
+  .qa-container {
+    margin: 2.5rem auto 0;
+  }
+
+  .question-title {
+    font-size: 1.4rem;
+    padding: 2rem 4rem;
+  }
+
+  .question-title:before {
+    font-size: 2rem;
+    top: 1.3rem;
+  }
+
+  .answer-text p {
+    font-size: 1.4rem;
+  }
+}

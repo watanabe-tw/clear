@@ -1,0 +1,316 @@
+:root {
+  --main-font: NotoSansJP-Regular;
+  --black: #272727;
+  --white: #ffffff;
+  --gray: #f4f4f5;
+  --blue: #0f86ff;
+}
+
+@font-face {
+  font-family: "NotoSansJP-Regular";
+  src: url("../fonts/NotoSansJP-Regular.otf") format("opentype");
+  content-disposition: none;
+}
+@font-face {
+  font-family: "NotoSansJP-Bold";
+  src: url("../fonts/NotoSansJP-Bold.otf") format("opentype");
+  content-disposition: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  color: var(--black);
+}
+
+body {
+  position: relative;
+  background: #fff;
+  font-family: var(--main-font);
+}
+
+main {
+  position: relative;
+  padding-top: 8rem;
+}
+* {
+  box-sizing: border-box;
+}
+/*スクロールバー全体*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/*スクロールバーの軌道*/
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+} */
+
+/*スクロールバーの動く部分*/
+/* ::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+} */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  /* 改行設定 */
+  .br_sp {
+    display: none;
+  }
+  /* SPオンリー */
+  .sp_only {
+    display: none;
+  }
+  .pc_only {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  main{
+    padding-top: 0;
+  }
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* 各ページのコンテンツ全体 */
+section {
+  background-color: #fff;
+}
+.container {
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16rem 8rem;
+}
+/* 各ページタイトル */
+.title {
+  font-weight: bold;
+}
+.title .en {
+  font-size: 7rem;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+.title .jp {
+  font-size: 3.5rem;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 8rem 1.7rem;
+  }
+  .title .en {
+    font-size: 3rem;
+  }
+  .title .jp {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Animation */
+.sl-txt .sl-txtInr {
+  display: inline-block;
+  opacity: 0;
+}
+.sl-txt .sl-txtInr--top {
+  transform: translate(0, 100%);
+}
+.sl-txt .sl-txtInr--bottom {
+  transform: translate(0, -100%);
+}
+.sl-txt .sl-txtInr--left {
+  transform: translate(100%, 0);
+}
+.sl-txt .sl-txtInr--right {
+  transform: translate(-100%, 0);
+}
+.sl-txt--active .sl-txtInr {
+  animation-name: sl_txt_center;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.sl-txt--active .sl-txtInr--top {
+  animation-name: sl_txt_top;
+}
+.sl-txt--active .sl-txtInr--bottom {
+  animation-name: sl_txt_bottom;
+}
+.sl-txt--active .sl-txtInr--left {
+  animation-name: sl_txt_left;
+}
+.sl-txt--active .sl-txtInr--right {
+  animation-name: sl_txt_right;
+}
+.sl-txt--active .sl-txtInr:nth-of-type(2) {
+  animation-delay: calc((2 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(3) {
+  animation-delay: calc((3 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(4) {
+  animation-delay: calc((4 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(5) {
+  animation-delay: calc((5 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(6) {
+  animation-delay: calc((6 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(7) {
+  animation-delay: calc((7 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(8) {
+  animation-delay: calc((8 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(9) {
+  animation-delay: calc((9 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(10) {
+  animation-delay: calc((10 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(11) {
+  animation-delay: calc((11 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(12) {
+  animation-delay: calc((12 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(13) {
+  animation-delay: calc((13 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(14) {
+  animation-delay: calc((14 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(15) {
+  animation-delay: calc((15 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(16) {
+  animation-delay: calc((16 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(17) {
+  animation-delay: calc((17 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(18) {
+  animation-delay: calc((18 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(19) {
+  animation-delay: calc((19 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(20) {
+  animation-delay: calc((20 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(21) {
+  animation-delay: calc((21 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(22) {
+  animation-delay: calc((22 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(23) {
+  animation-delay: calc((23 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(24) {
+  animation-delay: calc((24 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(25) {
+  animation-delay: calc((25 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(26) {
+  animation-delay: calc((26 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(27) {
+  animation-delay: calc((27 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(28) {
+  animation-delay: calc((28 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(29) {
+  animation-delay: calc((29 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(30) {
+  animation-delay: calc((30 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(31) {
+  animation-delay: calc((31 - 1) * 0.05s);
+}
+.sl-txt--active .sl-txtInr:nth-of-type(32) {
+  animation-delay: calc((32 - 1) * 0.05s);
+}
+/* 下から上のアニメーション */
+@keyframes sl_txt_top {
+  0% {
+      transform: translate(0, 100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+}
+/* 上から下のアニメーション */
+@keyframes sl_txt_bottom {
+  0% {
+      transform: translate(0, -100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+}
+/* 右から左のアニメーション */
+@keyframes sl_txt_left {
+  0% {
+      transform: translate(100%, 0);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+}
+/* 左から右のアニメーション */
+@keyframes sl_txt_right {
+  0% {
+      transform: translate(-100%, 0);
+      opacity: 0;
+  }
+  100% {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+}
+/* その場のアニメーション */
+@keyframes sl_txt_center {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

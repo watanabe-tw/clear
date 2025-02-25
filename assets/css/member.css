@@ -1,0 +1,54 @@
+.member .top_title {
+  margin: 0 20px;
+}
+
+.member_info_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  grid-gap: 0 2.5%;
+}
+.member_info_wrap .member_info {
+  width: 100%;
+}
+.member_info_wrap h2 {
+  background-color: #0f86ff;
+  line-height: 1;
+  padding: 10px;
+  margin: 0px 20px;
+  color: #fff;
+  text-align: center;
+}
+.graph_space {
+  margin: 50px 20px;
+}
+
+h3.text {
+  text-align: center;
+}
+
+/* 有給&平均残業 */
+.nensyu p,
+.age p,
+.yukyu p,
+.overtime p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.nensyu .count_member,
+.age .count_member,
+.yukyu .count_member,
+.overtime .count_member {
+  font-size: 44px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 767px) {
+  .main_contents.member {
+    width: 95%;
+  }
+  .member_info_wrap {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-gap: 0;
+  }
+}

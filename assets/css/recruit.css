@@ -1,0 +1,291 @@
+.recruit_wrap {
+  margin-top: 5rem;
+}
+
+.recruit_title ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 12%;
+  flex-wrap: wrap;
+}
+
+.recruit_title li {
+  width: 48%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.panel {
+  display: none;
+}
+
+.category_tab {
+  border: 1px solid #0f86ff;
+  font-weight: bold;
+  background-color: unset;
+  color: #0f86ff;
+  padding: 10px 10px;
+  font-size: 10px;
+  letter-spacing: 0.13;
+  margin-bottom: 10%;
+}
+
+.category_tab.is-active {
+  color: #fff;
+  background-color: #0f86ff;
+  transition: all 0.2s ease-out;
+}
+
+.panel.is-show {
+  display: block;
+}
+
+/* 募集要項詳細 */
+.recruit_job_info_wrap {
+  padding-bottom: 10%;
+}
+
+.recruit_job_title {
+  margin-bottom: 10%;
+  border-left: 3px solid #0f86ff;
+}
+
+.job_title_jp {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.job_title_en {
+  font-size: 16px;
+  padding: 0 0 0px 15px;
+  display: block;
+}
+
+.recruit_job_info_wrap dl {
+  border-top: 1px solid #c1d6d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-height: 75px;
+}
+.recruit_job_info_wrap dl:last-of-type {
+  border-bottom: 1px solid #c1d6d8;
+}
+.recruit_job_info_wrap dt,
+.recruit_job_info_wrap dd {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: auto;
+}
+.recruit_job_info_wrap dt {
+  width: 30%;
+}
+.recruit_job_info_wrap dd {
+  width: 70%;
+}
+
+.recruit_other_link {
+  margin: 5rem auto 0;
+  width: 80%;
+}
+
+.recruit_other_link ul {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+.recruit_other_link li + li {
+  padding-top: 6%;
+}
+
+.recruit_other_link a {
+  border: 1px solid #0f86ff;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  padding: 18px 10px;
+  border-radius: 50px;
+  text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: box-shadow 0.3s linear 0.1s,
+    transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: box-shadow 0.3s linear 0.1s,
+    transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s,
+    -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  font-size: 1.6rem;
+}
+
+.recruit_other_link a:hover {
+  -webkit-transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 20%);
+}
+
+.recruit_other_link .line {
+  color: #00b900;
+  padding-right: 3px;
+}
+
+/* 求人メディア経由の方はこちら */
+.recruit-other-link-content h3,
+.recruit_other_link h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  background: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+}
+
+.recruit-other-link {
+  width: 80%;
+  margin: auto;
+}
+
+.recruit-other-link-content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 3rem;
+}
+
+.recruit-other-link-content li a {
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  border: 1px solid var(--blue);
+  position: relative;
+  height: 8rem;
+  -webkit-transition: -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: box-shadow 0.3s linear 0.1s,
+    transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+  transition: box-shadow 0.3s linear 0.1s,
+    transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s,
+    -webkit-box-shadow 0.3s linear 0.1s,
+    -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
+}
+.recruit-other-link-content li a:hover {
+  -webkit-transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 20%);
+}
+
+.recruit-media-link__image {
+  display: inline-block;
+  font-size: 0;
+  aspect-ratio: 174 / 40;
+  width: 17.4rem;
+}
+
+.recruit-media-link__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .recruit_job_info_wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .recruit_title ul {
+    padding-top: 0;
+    padding-bottom: 6%;
+  }
+
+  .recruit_job_title {
+    margin-bottom: 5%;
+    width: 80%;
+    margin: 0 auto 5%;
+  }
+
+  .recruit_title li {
+    width: 31%;
+    cursor: pointer;
+    margin-bottom: 2%;
+  }
+  .category_tab {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .recruit_other_link ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  .recruit_other_link li {
+    width: 30%;
+  }
+  .recruit_other_link li + li {
+    padding-top: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  #recruit {
+    margin-top: 10rem;
+  }
+  .recruit_job_info_wrap dt,
+  .recruit_job_info_wrap dd {
+    font-size: 1.2rem;
+  }
+
+  .recruit_wrap {
+    margin-top: 3rem;
+  }
+
+  /* 求人メディア経由の方はこちら */
+  .recruit-other-link-content h3,
+  .recruit_other_link h3 {
+    margin-bottom: 10%;
+    font-size: 1.6rem;
+  }
+
+  .recruit-other-link-content ul {
+    grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+    gap: 1rem;
+  }
+
+  .recruit-other-link {
+    width: 100%;
+  }
+
+  .recruit-other-link-content li a {
+    height: 4rem;
+  }
+
+  .recruit-media-link__image {
+    width: 11rem;
+  }
+	.recruit_other_link {
+		width: 100%;
+		margin: 10% auto 0;
+	}
+	.recruit_other_link ul {
+		padding: 0;
+	}
+}

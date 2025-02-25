@@ -1,0 +1,234 @@
+.annual_income_list {
+  margin-top: 5rem;
+}
+.annual_income_list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+  grid-gap: 5% 2.5%;
+}
+.annual_income_list ul img {
+  height: 28rem;
+  object-fit: cover;
+  width: 100%;
+}
+.annual_income_list .text p .title {
+  font-size: 1.6rem;
+  display: block;
+  text-align: left;
+}
+
+.annual_income_list .text .name {
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+.annual_income_text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.annual_income_text span.right_yazirushi {
+  margin: 0 1rem;
+}
+
+.annual_income_text span.up_annual_income {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.annual_income_text span.before_annual_income {
+  font-size: 1.8rem;
+}
+
+.annual_income_img {
+  position: relative;
+}
+
+/* 個別 */
+
+.interview h2 {
+  font-size: 2.4rem;
+  padding: 1.2rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+}
+
+.interview {
+  margin-top: 2rem;
+}
+
+.interview h3 {
+  color: var(--blue);
+  font-size: 2.4rem;
+  border-left: 3px solid var(--blue);
+  padding-left: 2rem;
+  line-height: 4.8rem;
+}
+
+.interview p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+section#annual_income .title {
+  font-size: 3.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+section#annual_income .name {
+  font-size: 1.8rem;
+  height: 4rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+section#annual_income .link {
+  margin-top: 7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+section#annual_income .link a {
+  font-size: 2rem;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 2rem;
+  width: 100%;
+}
+
+.annual_income {
+  text-align: center;
+}
+
+.annual_income .right_yazirushi {
+  margin: 0 1rem;
+}
+
+.annual_income p {
+  font-size: 1.6rem;
+  /* line-height: 1; */
+}
+
+.annual_income .before_annual_income {
+  font-size: 2.5rem;
+}
+
+.annual_income .up_annual_income {
+  font-size: 4.2rem;
+  font-weight: bold;
+  border-bottom: 3px solid var(--black);
+}
+
+section#annual_income .flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 4rem;
+  margin: 0 0 2.5rem 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#annual_income .content_img {
+  width: 100%;
+  text-align: center;
+}
+
+section#annual_income .content_img img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+section#annual_income .flex .flex-right {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 2rem 0 0;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #annual_incomes,
+  #annual_income {
+    margin-top: 10rem;
+  }
+
+  .annual_income_list {
+    margin-top: 3rem;
+  }
+  .annual_income_list ul {
+    display: block;
+  }
+  .annual_income_list ul li {
+    margin-bottom: 5%;
+  }
+  section#annual_income .title {
+    font-size: 1.6rem;
+  }
+
+  section#annual_income .flex .flex-right {
+    gap: 0rem;
+    justify-content: space-between;
+    margin: 1rem 0 0;
+    flex-direction: column;
+  }
+
+  section#annual_income .name {
+    font-size: 1.4rem;
+    height: 3rem;
+  }
+
+  .annual_income p {
+    font-size: 1.4rem;
+  }
+
+  .annual_income .before_annual_income {
+    font-size: 1.4rem;
+  }
+
+  .annual_income .up_annual_income {
+    font-size: 3.2rem;
+  }
+
+  section#annual_income .flex {
+    margin: 0 0 2rem 0;
+  }
+
+  .interview h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .interview h3 {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .interview p {
+    font-size: 1.4rem;
+    margin: 2.5rem 0;
+  }
+
+  section#annual_income .link {
+    margin-top: 3rem;
+  }
+
+  section#annual_income .link a {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}

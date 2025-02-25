@@ -1,0 +1,166 @@
+.timeline {
+  width: 100%;
+  max-width: 100%;
+  margin: 2.8rem auto;
+  background: var(--gray);
+}
+.timeline-list {
+  padding: 8rem 4rem 4rem;
+}
+.timeline-list-item {
+  display: flex;
+  line-height: 1.5;
+  font-size: 2.4rem;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  line-height: 4rem;
+}
+
+.month {
+  margin-right: 2rem;
+}
+.timeline-list-item .date {
+  width: 20%;
+  padding: 0 0 0 2rem;
+  color: var(--black);
+  font-weight: bold;
+}
+.timeline-list-item .content {
+  position: relative;
+  width: 80%;
+  padding: 0 2rem 6rem 3rem;
+  border-left: 1px solid var(--blue);
+  vertical-align: top;
+}
+.timeline-list-item .content::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+}
+
+#history .container {
+  padding-bottom: 0;
+}
+
+#co_info .container {
+  padding: 4rem 8rem 8rem;
+}
+
+#co_info .title .en {
+  font-size: 5rem;
+}
+
+#co_info .title .jp {
+  font-size: 3rem;
+}
+
+.info_flex {
+  max-width: 1400px;
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_item {
+  width: 31%;
+  text-align: center;
+}
+
+.info_item a {
+  background: var(--blue);
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: var(--gray);
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #history {
+    padding-top: 10rem;
+  }
+  #history .container {
+    padding-right: 0.8rem;
+  }
+  .timeline {
+    margin: 2rem auto;
+  }
+  .timeline-list {
+    padding: 4rem 0.5rem 2rem 1rem;
+  }
+
+  .timeline-list-item {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+
+  .timeline-list-item .date {
+    padding-left: 0;
+    margin-top: 0.1rem;
+    width: 18%;
+  }
+
+  .timeline-list-item .content {
+    padding: 0 0 4rem 1.5rem;
+    width: 82%;
+  }
+
+  .item {
+    display: block;
+    line-height: 2rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .di {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .timeline-list-item .content::before {
+    width: 1rem;
+    height: 1rem;
+    left: -2.27%;
+  }
+
+  .month {
+    margin-right: 0;
+    border-bottom: 1px solid var(--black);
+  }
+
+  .content .item:nth-child(n + 2) {
+    margin-top: 1.2rem;
+  }
+  #co_info .container {
+    padding: 1rem 1.7rem 5rem;
+  }
+  #co_info .title .en {
+    font-size: 2.4rem;
+  }
+
+  #co_info .title .jp {
+    font-size: 1.4rem;
+  }
+  .info_flex {
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .info_item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .info_item a {
+    font-size: 1.3rem;
+    padding: 1.3rem;
+  }
+}

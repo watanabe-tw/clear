@@ -170,13 +170,13 @@
 			</h1>
 			<div class="info_flex">
 				<div class="info_item">
-					<a href="<?= $newURL ?>/company/#company_message">代表メッセージ</a>
+					<a href="<?= $base_url ?>/company/#company_message">代表メッセージ</a>
 				</div>
 				<div class="info_item">
-					<a href="<?= $newURL ?>/company">会社概要</a>
+					<a href="<?= $base_url ?>/company">会社概要</a>
 				</div>
 				<div class="info_item">
-					<a href="<?= $newURL ?>/history">沿革</a>
+					<a href="<?= $base_url ?>/history">沿革</a>
 				</div>
 			</div>
 		</div>

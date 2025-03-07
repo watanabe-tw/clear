@@ -16,6 +16,7 @@
   color: var(--blue);
   padding: 1rem;
   cursor: pointer;
+  border-radius: .8rem;
 }
 
 .news_category ul li.is-active {

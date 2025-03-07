@@ -66,13 +66,13 @@
 				<h3>その他</h3>
 				<ul>
 					<li>
-						<a href="<?= $newURL ?>/welfare/">福利厚生</a>
+						<a href="<?= $base_url ?>/welfare/">福利厚生</a>
 					</li>
 					<li>
 						<a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=518tkejr" target="_blank"><span class="line">LINE</span>でエントリー</a>
 					</li>
 					<li>
-						<a href="<?= $newURL ?>/recruit_contact">メールでエントリー</a>
+						<a href="<?= $base_url ?>/recruit_contact">メールでエントリー</a>
 					</li>
 				</ul>
 			</div>

@@ -11,7 +11,7 @@
 			<div class="content">
 			</div>
 			<div class="link">
-				<a href="<?= $newURL ?>/blog">ブログ一覧に戻る →</a>
+				<a href="<?= $base_url ?>/blog">ブログ一覧に戻る →</a>
 			</div>
 		</div>
 	</section>

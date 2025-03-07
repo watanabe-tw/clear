@@ -2,7 +2,7 @@
 				<div class="member_info employee">
 					<h2>社員数</h2>
 					<div class="graph_space">
-						<img src="<?= $newURL ?>/assets/img/member/member_employees.png" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/member_employees.png" alt="">
 					</div>
 					<div class="member_table_wrapper">
 						<ul>
@@ -24,7 +24,7 @@
 								<span>156</span>
 								<span>217</span>
 								<span>289</span>
-								<span>307</span>
+								<span>316</span>
 							</li>
 							<li>
 								<span>グループ合計</span>
@@ -44,7 +44,7 @@
 								<span>215</span>
 								<span>301</span>
 								<span>381</span>
-								<span>400</span>
+								<span>409</span>
 							</li>
 						</ul>
 					</div>
@@ -52,7 +52,7 @@
 				<div class="member_info male_female">
 					<h2>男女比率</h2>
 					<div class="graph_space">
-						<img src="<?= $newURL ?>/assets/img/member/male_female.svg" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/male_female.svg" alt="">
 					</div>
 				</div>
 				<div class="member_info nensyu">
@@ -60,7 +60,7 @@
 					<div class="graph_space">
 						<h3 class="text">年収アップ割合平均</h3>
 						<p><span class="count_member sl-txt" data-dire="top">131</span>万</p>
-						<img src="<?= $newURL ?>/assets/img/member/nensyu.svg" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/nensyu.svg" alt="">
 					</div>
 				</div>
 				<div class="member_info age">
@@ -68,19 +68,19 @@
 					<div class="graph_space">
 						<h3 class="text">平均年齢</h3>
 						<p><span class="count_member sl-txt" data-dire="top">36</span>歳</p>
-						<img src="<?= $newURL ?>/assets/img/member/age.svg" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/age.svg" alt="">
 					</div>
 				</div>
 				<div class="member_info dev_infra">
 					<h2>開発・インフラ割合</h2>
 					<div class="graph_space">
-						<img src="<?= $newURL ?>/assets/img/member/dev_infra.svg" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/dev_infra.svg" alt="">
 					</div>
 				</div>
 				<div class="member_info side_business">
 					<h2>副業率</h2>
 					<div class="graph_space">
-						<img src="<?= $newURL ?>/assets/img/member/side_business.svg" alt="">
+						<img src="<?= $base_url ?>/assets/img/member/side_business.svg" alt="">
 					</div>
 				</div>
 				<div class="member_info yukyu">

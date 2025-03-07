@@ -11,7 +11,7 @@
   font-size: 2rem;
   font-weight: 700;
   display: inline;
-  border-bottom: 4px solid #0f86ff;
+  border-bottom: 4px solid var(--blue);
   letter-spacing: 0.2em;
   line-height: 2;
 }

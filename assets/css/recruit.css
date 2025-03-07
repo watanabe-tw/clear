@@ -9,16 +9,18 @@
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 5%;
   padding-bottom: 12%;
   flex-wrap: wrap;
+  gap: 0 1rem;
 }
 
 .recruit_title li {
   width: 48%;
   box-sizing: border-box;
   text-align: center;
+  border-radius: .8rem;
 }
 
 .panel {
@@ -26,10 +28,10 @@
 }
 
 .category_tab {
-  border: 1px solid #0f86ff;
+  border: 1px solid var(--blue);
   font-weight: bold;
   background-color: unset;
-  color: #0f86ff;
+  color: var(--blue);
   padding: 10px 10px;
   font-size: 10px;
   letter-spacing: 0.13;
@@ -38,7 +40,7 @@
 
 .category_tab.is-active {
   color: #fff;
-  background-color: #0f86ff;
+  background-color: var(--blue);
   transition: all 0.2s ease-out;
 }
 
@@ -53,7 +55,7 @@
 
 .recruit_job_title {
   margin-bottom: 10%;
-  border-left: 3px solid #0f86ff;
+  border-left: 3px solid var(--blue);
 }
 
 .job_title_jp {
@@ -108,12 +110,12 @@
 }
 
 .recruit_other_link a {
-  border: 1px solid #0f86ff;
+  border: 1px solid var(--blue);
   font-weight: bold;
   display: inline-block;
   width: 100%;
   padding: 18px 10px;
-  border-radius: 50px;
+  border-radius: .8rem;
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.3s linear 0.1s,
     -webkit-transform 0.3s cubic-bezier(0.6, 0, 0.3, 1) 0.1s;
@@ -165,7 +167,7 @@
 .recruit-other-link-content li a {
   display: grid;
   place-items: center;
-  border-radius: 2rem;
+  border-radius: .8rem;
   border: 1px solid var(--blue);
   position: relative;
   height: 8rem;
@@ -218,7 +220,7 @@
   }
 
   .recruit_title li {
-    width: 31%;
+    width: 24%;
     cursor: pointer;
     margin-bottom: 2%;
   }

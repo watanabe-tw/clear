@@ -4,7 +4,7 @@ footer{
 
 /* コンタクト全体 */
 .footer_contact_wrap {
-  background: linear-gradient(#0f86ff 30%, #c1d6d8 100%);
+  background: linear-gradient(var(--blue) 30%, #c1d6d8 100%);
   padding-top: 5rem;
   position: relative;
 }
@@ -105,7 +105,7 @@ footer{
   padding-top: 6%;
 }
 .footer_company_link a {
-  border: 1px solid #0f86ff;
+  border: 1px solid var(--blue);
   font-weight: bold;
   display: inline-block;
   width: 100%;
@@ -272,7 +272,7 @@ footer{
     padding: 1rem 0 0;
   }
   .footer_company_wrap {
-    padding: 0 1.7rem;
+    padding: 0 1.7rem 8rem;
   }
 
   .footer_company_link p {

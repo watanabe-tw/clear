@@ -1,0 +1,335 @@
+.qualification-support-pdf {
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* フィルターセクションのスタイル */
+.filter-section {
+  margin: 6rem 0 0;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  background-color: var(--light-blue);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border: 1px solid rgba(15, 134, 255, 0.1);
+}
+
+.filter-container:hover {
+  box-shadow: 0 6px 16px rgba(15, 134, 255, 0.15);
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 280px;
+}
+
+.filter-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: var(--black);
+  transition: var(--transition);
+}
+
+/* Safari対応のselect, inputスタイル */
+.filter-item select,
+.filter-item input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: 2px solid rgba(15, 134, 255, 0.2);
+  border-radius: var(--border-radius);
+  font-size: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--white);
+  box-sizing: border-box;
+  line-height: normal;
+  transition: var(--transition);
+}
+
+/* selectのカスタム矢印設定 */
+.filter-item select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230f86ff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+/* フォーカス時のスタイル */
+.filter-item select:focus,
+.filter-item input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(15, 134, 255, 0.2);
+}
+
+.filter-item select:hover,
+.filter-item input:hover {
+  border-color: var(--blue);
+}
+
+.filter-results {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  color: var(--blue);
+  padding-left: 1rem;
+  border-left: 4px solid var(--blue);
+}
+
+/* 検索結果のハイライト */
+.cert-item.highlight {
+  background-color: rgba(15, 134, 255, 0.1);
+  border-left: 4px solid var(--blue);
+}
+
+.cert-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.cert-table th {
+  background-color: var(--blue);
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--white);
+  border: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cert-table th:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+.cert-table th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
+.cert-table tr {
+  transition: var(--transition);
+}
+
+.cert-table tr:hover {
+  background-color: var(--hover-blue);
+}
+
+.cert-table td {
+  border: none;
+  border-bottom: 1px solid rgba(15, 134, 255, 0.1);
+  vertical-align: top;
+}
+
+.vendor-col {
+  width: 35%;
+  font-weight: 600;
+  padding: 1.5rem;
+  color: var(--blue);
+  background-color: rgba(15, 134, 255, 0.05);
+}
+
+.cert-category {
+  font-weight: 600;
+  color: var(--dark-blue);
+  padding: 1.2rem 1.5rem;
+  background: var(--light-blue);
+  border-left: 4px solid var(--blue);
+  margin-top: 0.5rem;
+}
+
+.cert-category:first-child {
+  margin-top: 0;
+}
+
+.cert-item {
+  padding: 1.4rem 1.8rem;
+  border-bottom: 1px solid rgba(15, 134, 255, 0.1);
+  transition: var(--transition);
+}
+
+.cert-item:hover {
+  background-color: var(--hover-blue);
+}
+
+.cert-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.filter-section-title,
+.filter-results-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+h2.filter-section-title:before,
+.filter-results-title:before {
+  content: "";
+  display: inline-block;
+  width: 0.6rem;
+  height: 2.8rem;
+  background-color: var(--blue);
+  margin-right: 1.5rem;
+  border-radius: 6px;
+}
+
+.filter-results-section {
+  margin-top: 4rem;
+}
+
+/* ボタンのアニメーション効果 */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 134, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(15, 134, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(15, 134, 255, 0);
+  }
+}
+
+#cert-search {
+  position: relative;
+}
+
+#cert-search::placeholder {
+  color: rgba(15, 134, 255, 0.5);
+  transition: var(--transition);
+}
+
+#cert-search:focus::placeholder {
+  opacity: 0.7;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  #qualification-support {
+    margin-top: 8rem;
+  }
+
+  .qualification-support-pdf {
+    margin-top: 2rem;
+  }
+
+  .cert-table .cert-header {
+    display: none;
+  }
+
+  .cert-table,
+  .cert-table tbody,
+  .cert-table tr,
+  .cert-table td {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .filter-section-title,
+  .filter-results-title {
+    font-size: 1.8rem;
+  }
+
+  .cert-table tr {
+    margin-bottom: 1.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+  }
+
+  .vendor-col.first {
+    border-top: none !important;
+  }
+
+  .vendor-col {
+    width: 100%;
+    text-align: center;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .filter-item {
+    width: 100%;
+  }
+
+  /* モバイルSafari用の調整 */
+  .filter-item select,
+  .filter-item input {
+    font-size: 1.4rem;
+    height: auto;
+  }
+
+  .cert-item {
+    border-left: none;
+    border-right: none;
+  }
+
+  .cert-category {
+    text-align: center;
+  }
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cert-row {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.cert-row:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.cert-row:nth-child(odd) {
+  animation-delay: 0.2s;
+}

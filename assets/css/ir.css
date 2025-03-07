@@ -10,7 +10,7 @@ ul#page-link {
 }
 
 #page-link li a {
-  color: #0f86ff;
+  color: var(--blue);
   font-size: 1.6rem;
   text-align: center;
   width: 100%;
@@ -21,7 +21,7 @@ ul#page-link {
   padding-right: 0.5rem;
   border: solid;
   border-width: 2px;
-  border-color: #0f86ff;
+  border-color: var(--blue);
   border-radius: 0px;
   display: block;
   -webkit-transition: all 0.3s;
@@ -29,8 +29,8 @@ ul#page-link {
 }
 #page-link li a:hover {
   color: rgba(255, 255, 255, 1);
-  background-color: #0f86ff;
-  border-color: #0f86ff;
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 
 .member_info_wrap {
@@ -42,7 +42,7 @@ ul#page-link {
   width: 100%;
 }
 .member_info_wrap h2 {
-  background-color: #0f86ff;
+  background-color: var(--blue);
   line-height: 1;
   padding: 10px;
   margin: 2px 0;

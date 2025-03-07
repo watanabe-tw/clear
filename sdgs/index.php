@@ -10,27 +10,27 @@
 					</h1>
 					<h2>持続可能な開発目標『SDGs』とは？</h2>
 					<p class="logo">
-						<img src="<?= $newURL ?>/assets/img/sdgs/logo_goals.png" alt="">
+						<img src="<?= $base_url ?>/assets/img/sdgs/logo_goals.png" alt="">
 					</p>
 					<ul class="sdgs_list">
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list01.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list02.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list03.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list04.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list05.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list06.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list07.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list10.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list13.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list14.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list15.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list16.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list17.gif" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list18.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list01.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list02.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list03.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list04.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list05.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list06.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list07.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list10.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list13.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list14.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list15.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list16.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list17.gif" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list18.gif" alt=""></li>
 					</ul>
 					<div class="sdgs_text">
 						<p>持続可能な開発目標『SDGs(Sustainable Development Goals)』とは、2001年に策定されたミレニアム開発目標『MDGs』の後継として、2015年9月の国連サミットで採択された『持続可能な開発のための2030アジェンダ』にて記載された2016年から2030年までの国際目標です。</p>
@@ -43,9 +43,9 @@
 				<div class="container">
 					<h2>DSEのSDGsへの取り組み</h2>
 					<ul class="iso_list">
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/iso_9001.png" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/iso_14001.png" alt=""></li>
-						<li><img src="<?= $newURL ?>/assets/img/sdgs/iso_iec_27001.png" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/iso_9001.png" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/iso_14001.png" alt=""></li>
+						<li><img src="<?= $base_url ?>/assets/img/sdgs/iso_iec_27001.png" alt=""></li>
 					</ul>
 					<p class="sdgs_text">
 						株式会社クリアでは、ソフトウェア開発・ソリューションサービスを中心とした事業の中で、<br>
@@ -67,9 +67,9 @@
 								</div>
 							</div>
 							<ul class="sdgs_list">
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list17.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list17.gif" alt=""></li>
 							</ul>
 							<ul class="txt_list">
 								<li>メーカー・パートナーとのリレーションシップを強化し、高品質なソフトウェア・ソリューション・情報セキュリティを提供します</li>
@@ -85,10 +85,10 @@
 								</div>
 							</div>
 							<ul class="sdgs_list">
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list03.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list05.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list10.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list03.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list05.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list10.gif" alt=""></li>
 							</ul>
 							<ul class="txt_list">
 								<li>働きやすく、働きがいのある職場環境を作り、雇用を創出します</li>
@@ -106,12 +106,12 @@
 								</div>
 							</div>
 							<ul class="sdgs_list">
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list07.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list13.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list14.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list15.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list07.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list12.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list13.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list14.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list15.gif" alt=""></li>
 							</ul>
 							<ul class="txt_list">
 								<li>ワークフローや電子決裁システムなどの導入によりペーパーレス化を推進し、業務の効率化とともに環境に配慮して持続可能な社会の実現に貢献します</li>
@@ -127,10 +127,10 @@
 								</div>
 							</div>
 							<ul class="sdgs_list">
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list04.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
-								<li><img src="<?= $newURL ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list04.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list08.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list09.gif" alt=""></li>
+								<li><img src="<?= $base_url ?>/assets/img/sdgs/sdgs_list11.gif" alt=""></li>
 							</ul>
 							<ul class="txt_list">
 								<li>社員のスキルアップを積極的に支援し、技術革新に対応した持続可能な社会の作り手を育成します</li>

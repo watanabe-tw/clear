@@ -11,7 +11,7 @@
 			</div>
 			<div class="content_img"></div>
 			<div class="interview"></div>
-			<div class="link"><a href="<?= $newURL ?>/annual-income">年収アップ実績一覧に戻る →</a></div>
+			<div class="link"><a href="<?= $base_url ?>/annual-income">年収アップ実績一覧に戻る →</a></div>
 		</div>
 	</section>
 </main>

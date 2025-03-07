@@ -4,6 +4,12 @@
   --white: #ffffff;
   --gray: #f4f4f5;
   --blue: #0f86ff;
+  --light-blue: #f0f7ff;
+  --hover-blue: #e5f3ff;
+  --dark-blue: #0a6edb;
+  --border-radius: 0.8rem;
+  --box-shadow: 0 4px 12px rgba(15, 134, 255, 0.1);
+  --transition: all 0.3s ease;
 }
 
 @font-face {
@@ -34,7 +40,7 @@ body {
 
 main {
   position: relative;
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 * {
   box-sizing: border-box;
@@ -44,18 +50,6 @@ main {
   width: 0;
 }
 
-/*スクロールバーの軌道*/
-/* ::-webkit-scrollbar-track {
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-} */
-
-/*スクロールバーの動く部分*/
-/* ::-webkit-scrollbar-thumb {
-  background-color: var(--blue);
-  border-radius: 10px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
-} */
 a,
 a:visited,
 a:hover,
@@ -79,7 +73,7 @@ a:active {
 }
 
 @media (max-width: 767px) {
-  main{
+  main {
     padding-top: 0;
   }
   .sp_only {
@@ -131,7 +125,6 @@ section {
     font-size: 1.6rem;
   }
 }
-
 
 /* Animation */
 .sl-txt .sl-txtInr {
@@ -264,53 +257,53 @@ section {
 /* 下から上のアニメーション */
 @keyframes sl_txt_top {
   0% {
-      transform: translate(0, 100%);
-      opacity: 0;
+    transform: translate(0, 100%);
+    opacity: 0;
   }
   100% {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 /* 上から下のアニメーション */
 @keyframes sl_txt_bottom {
   0% {
-      transform: translate(0, -100%);
-      opacity: 0;
+    transform: translate(0, -100%);
+    opacity: 0;
   }
   100% {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 /* 右から左のアニメーション */
 @keyframes sl_txt_left {
   0% {
-      transform: translate(100%, 0);
-      opacity: 0;
+    transform: translate(100%, 0);
+    opacity: 0;
   }
   100% {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 /* 左から右のアニメーション */
 @keyframes sl_txt_right {
   0% {
-      transform: translate(-100%, 0);
-      opacity: 0;
+    transform: translate(-100%, 0);
+    opacity: 0;
   }
   100% {
-      transform: translate(0, 0);
-      opacity: 1;
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 /* その場のアニメーション */
 @keyframes sl_txt_center {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

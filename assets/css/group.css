@@ -82,8 +82,8 @@ a.group_link {
 
 .group_button_area {
   margin: auto;
-  background-color: #0f86ff;
-  border: 1px solid #0f86ff;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
   text-align: center;
   padding: 1rem;
   color: #fff;

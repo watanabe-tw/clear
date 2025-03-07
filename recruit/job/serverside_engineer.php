@@ -34,7 +34,7 @@
       </dt>
       <dd>
         月給32万円～70万円＋賞与<br>
-        ◎給料は単価の<? echo $kangenritsu ?>を還元致します。<br>
+        ◎給料は単価の<?php echo $site_config['kangenritsu'] ?>を還元致します。<br>
         ◎案件の月単金により、昇給&賞与額は決定致します。<br><br>
         〜 年収例 〜<br>
         400万円／23歳（経験2年）<br>

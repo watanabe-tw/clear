@@ -1,11 +1,3 @@
-/* .tanka {
-  margin-top: 10rem;
-} */
-.bottom {
-  /* display: flex; */
-  /* justify-content: space-around; */
-}
-
 #style .title {
   text-align: center;
 }
@@ -38,7 +30,7 @@
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 4px solid #0f86ff;
+  border-bottom: 4px solid var(--blue);
 }
 
 .style_items p {
@@ -90,13 +82,4 @@
   .botto .style_items p {
     margin: -1rem 0 1rem 0;
   }
-  /* .tanka{
-    margin-top: 5rem;
-  }
-  .style {
-    padding-top: 10rem;
-  }
-  #mission_items.style .flex h3 div{
-    margin: 2rem 0 0;
-  } */
 }

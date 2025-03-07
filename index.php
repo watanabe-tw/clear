@@ -1,82 +1,42 @@
 <?php include('./header.php'); ?>
-<div id="popup_profile">
-	<div class="popup-wrapper">
-		<div class="close">
-			<button id="popup-close">
-				<div class="me-button">
-					<span class="ka">(</span>
-					<span class="bu">close</span>
-					<span class="ka">)</span>
-				</div>
-			</button>
-		</div>
-		<div class="profile">
-			<div class="popImgOpen">
-				<img src="" alt="">
-			</div>
-			<div class="profile-text">
-				<div class="popup-name"></div>
-				<div class="profile-tag">
-					<ul></ul>
-				</div>
-				<!-- <div class="profile-history">
-					<p>ITエンジニア歴<span></span></p>
-				</div> -->
-			</div>
-		</div>
-		<div class="discription">
-			<div class="discription-1">
-				<h3>これまでの経歴を踏まえた自己紹介</h3>
-				<p></p>
-			</div>
-			<div class="discription-2">
-				<h3>現在の業務内容</h3>
-				<p></p>
-			</div>
-			<div class="discription-3">
-				<h3>趣味や休日の過ごし方</h3>
-				<p></p>
-			</div>
-		</div>
-	</div>
-</div>
+<?php include('parts/member.php'); ?>
 <main>
 	<?php include('./loading.php'); ?>
 	<div class="main_top_slide">
 		<div class="slider-area">
 			<div class="loopslider_wrap_top">
 				<ul>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/1.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/2.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/3.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/4.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/5.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/1.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/2.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/3.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/4.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/5.svg" width="100%"></li>
 				</ul>
 				<ul>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/1.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/2.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/3.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/4.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/5.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/1.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/2.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/3.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/4.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/5.svg" width="100%"></li>
 				</ul>
 			</div>
 			<div class="loopslider_wrap_bottom">
 				<ul>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/6.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/7.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/8.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/9.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/6.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/7.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/8.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/9.svg" width="100%"></li>
 				</ul>
 				<ul>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/6.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/7.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/8.svg" width="100%"></li>
-					<li><img src="<?= $newURL ?>/assets/img/main_visual/9.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/6.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/7.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/8.svg" width="100%"></li>
+					<li><img src="<?= $base_url ?>/assets/img/main_visual/9.svg" width="100%"></li>
 				</ul>
 			</div>
     </div>
 		<div class="main_top_slide_ja">
-			<img src="<?= $newURL ?>/assets/img/main_visual/freelance.png" alt="">
+			<img src="<?= $base_url ?>/assets/img/main_visual/freelance.png" alt="">
 		</div>
 		</p>
 	</div>
@@ -98,7 +58,7 @@
 				</div>
 				<p>フリーランスの自由と正社員の安定をお約束致します。<br>正社員でありながら、フリーランスのように働ける会社です。</p>
 				<div class="viewmore">
-					<a href="<?= $newURL ?>/style/">クリアの制度について →</a>
+					<a href="<?= $base_url ?>/style/">クリアの制度について →</a>
 				</div>	
 			</div>
 		</div>
@@ -169,7 +129,7 @@
 			<?php include('./parts/member_info_wrap.php'); ?>
 		</div>
 	</section>
-	<section id="b_n">
+	<section id="news_id">
 		<div class="container">
 			<h1 class="title">
 				<span class="en sl-txt" data-dire="top">News</span>
@@ -179,12 +139,23 @@
 				<div id="news">
 					<div class="news_content"></div>
 					<div class="viewmore">
-						<a href="<?= $newURL ?>/news/">View more →</a>
+						<a href="<?= $base_url ?>/news/">View more →</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- <section id="introduction">
+		<div class="container">
+			<h1 class="title">
+				<span class="en sl-txt" data-dire="top">Introduction</span>
+				<span class="jp sl-txt" data-dire="top">会社説明資料</span>
+			</h1>
+			<div class="introduction_wrapper">
+				<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/e7d7064d03224cedae8ff46ad052dcf1" title="株式会社クリア - 会社説明資料" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+			</div>	
+		</div>
+	</section> -->
 	<section id="group">
 		<div class="container">
 			<h1 class="title">
@@ -193,23 +164,23 @@
 			</h1>
 			<div class="flex">
 				<div class="clear">
-					<img src="<?= $newURL ?>/assets/img/clear-group.png" alt="">
+					<img src="<?= $base_url ?>/assets/img/logo.svg" alt="">
 					<h4>株式会社クリア</h4>
 					<p>フリーランスのような正社員として<br>働くことを目的として設立した会社です</p>
 				</div>
 				<div class="flat">
-				<img src="<?= $newURL ?>/assets/img/flat-group.png" alt="">
+				<img src="<?= $base_url ?>/assets/img/flat-group.png" alt="">
 					<h4>株式会社フラット</h4>
 					<p>SES業界いちばんゆる〜く<br>働く事を目的に設立された会社です</p>
 				</div>
 				<div class="rich">
-				<img src="<?= $newURL ?>/assets/img/rich-group.png" alt="">
+				<img src="<?= $base_url ?>/assets/img/rich-group.png" alt="">
 					<h4>株式会社リッチ</h4>
 					<p>全国のSESエンジニアを「りっち」<br>にする事を目的に設立された会社です</p>
 				</div>
 			</div>
 			<div class="viewmore">
-				<a href="<?= $newURL ?>/group/">View more →</a>
+				<a href="<?= $base_url ?>/group/">View more →</a>
 			</div>
 		</div>
 	</section>
@@ -224,7 +195,7 @@
 				</ul>
 			</div>
 			<div class="viewmore">
-				<a href="<?= $newURL ?>/blog/">View more →</a>
+				<a href="<?= $base_url ?>/blog/">View more →</a>
 			</div>
 		</div>
 	</section>

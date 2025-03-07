@@ -43,9 +43,9 @@
 					<dt>グループ会社
 					</dt>
 					<dd>
-					株式会社フラット<br>
+						株式会社フラット<br>
 						<a href="https://flat-inc.site/">https://flat-inc.site</a><br>
-					株式会社リッチ<br>
+						株式会社リッチ<br>
 						<a href="https://rich-inc.site/">https://rich-inc.site</a>
 					</dd>
 				</dl>
@@ -53,7 +53,7 @@
 					<dt>社員数
 					</dt>
 					<dd>
-					単体307名 連結400名<br class="br_sp">※2025年2月1日現在
+						単体316名 連結409名<br class="br_sp">※2025年3月1日現在
 					</dd>
 				</dl>
 				<dl>
@@ -69,34 +69,34 @@
 				</dl>
 				<dl>
 					<dt>
-					顧問弁護士
+						顧問弁護士
 					</dt>
 					<dd>
-					TEN法律事務所
+						TEN法律事務所
 					</dd>
 				</dl>
 				<dl>
 					<dt>
-					顧問税理士
+						顧問税理士
 					</dt>
 					<dd>
-					蔵田経営会計事務所
+						蔵田経営会計事務所
 					</dd>
 				</dl>
 				<dl>
 					<dt>
-					顧問社会保険労務士
+						顧問社会保険労務士
 					</dt>
 					<dd>
-					社会保険労務士法人ベリーベスト
+						社会保険労務士法人ベリーベスト
 					</dd>
 				</dl>
 				<dl>
 					<dt>
-					取引金融機関
+						取引金融機関
 					</dt>
 					<dd>
-					みずほ銀行<br>GMOあおぞらネット銀行
+						みずほ銀行<br>GMOあおぞらネット銀行
 					</dd>
 				</dl>
 			</div>
@@ -110,8 +110,8 @@
 				<span class="jp sl-txt" data-dire="top">組織図</span>
 			</h1>
 			<div class="organization_wrap">
-				<img src="<?= $newURL ?>/assets/img/organization.png" alt="" class="pc_only">
-				<img src="<?= $newURL ?>/assets/img/organization_sp.png" alt="" class="sp_only">
+				<img src="<?= $base_url ?>/assets/img/organization.png" alt="" class="pc_only">
+				<img src="<?= $base_url ?>/assets/img/organization_sp.png" alt="" class="sp_only">
 			</div>
 		</div>
 	</section>
@@ -150,12 +150,12 @@
 						<dl>
 							<dt>アクセス</dt>
 							<dd>地下鉄御堂筋線、谷町線、JR阪和線「天王寺駅」直結<br>
-									近鉄南大阪線「大阪阿倍野橋駅」直結
+								近鉄南大阪線「大阪阿倍野橋駅」直結
 							</dd>
 						</dl>
 					</li>
 					<li>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.336686403432!2d135.51118796432712!3d34.64619914364473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddf023e6dd79%3A0x76f9200a45c2127!2z44GC44G544Gu44OP44Or44Kr44K5!5e0!3m2!1sja!2sjp!4v1643256956293!5m2!1sja!2sjp" width="100%" height="290" class="company_map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.336686403432!2d135.51118796432712!3d34.64619914364473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddf023e6dd79%3A0x76f9200a45c2127!2z44GC44G544Gu44OP44Or44Kr44K5!5e0!3m2!1sja!2sjp!4v1643256956293!5m2!1sja!2sjp" width="100%" height="290" class="company_map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 					</li>
 				</ul>
 				<ul class="company_access_contents">
@@ -214,7 +214,7 @@
 					</li>
 					<li>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.0922797244616!2d141.35429121468826!3d43.06052669857096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2982b4a374db%3A0x1db65c48584f6720!2z44CSMDYwLTAwNDIg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65aSn6YCa6KW_77yR5LiB55uu77yR77yU4oiS77ySIOahguWSjOWkp-mAmuODk-ODqzUw!5e0!3m2!1sja!2sjp!4v1657513945214!5m2!1sja!2sjp"
-						width="100%" height="290" style="border:0;" class="company_map" frameborder="0" allowfullscreen=""></iframe>
+							width="100%" height="290" style="border:0;" class="company_map" frameborder="0" allowfullscreen=""></iframe>
 					</li>
 				</ul>
 			</div>
@@ -230,7 +230,7 @@
 			<div class="company_message_wrap">
 				<div class="company_message_name_contents">
 					<div class="company_message_name_img">
-						<img src="<?= $newURL ?>/assets/img/sp_message_img_002-removebg-preview.png" alt="">
+						<img src="<?= $base_url ?>/assets/img/ceo.png" alt="">
 					</div>
 					<div class="company_message_name">
 						<h2 class="company_message_name_jp">笠原 拓馬</h2>
@@ -278,13 +278,13 @@
 			</h1>
 			<div class="info_flex">
 				<div class="info_item">
-					<a href="<?= $newURL ?>/company/#company_message">代表メッセージ</a>
+					<a href="<?= $base_url ?>/company/#company_message">代表メッセージ</a>
 				</div>
 				<div class="info_item">
-					<a href="<?= $newURL ?>/company">会社概要</a>
+					<a href="<?= $base_url ?>/company">会社概要</a>
 				</div>
 				<div class="info_item">
-					<a href="<?= $newURL ?>/history">沿革</a>
+					<a href="<?= $base_url ?>/history">沿革</a>
 				</div>
 			</div>
 		</div>

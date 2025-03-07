@@ -41,7 +41,7 @@
   animation: infinity-scroll-left 80s infinite linear 0.5s both;
 }
 .slider-area .loopslider_wrap_bottom ul {
-  animation :infinity-scroll-right 80s infinite linear 0.5s both;
+  animation: infinity-scroll-right 80s infinite linear 0.5s both;
 }
 .slider-area .loopslider_wrap_top ul li,
 .slider-area .loopslider_wrap_bottom ul li {
@@ -69,22 +69,21 @@
 }
 
 @keyframes infinity-scroll-left {
-from {
-  transform: translateX(0);
-}
+  from {
+    transform: translateX(0);
+  }
   to {
-  transform: translateX(-100%);
-}
+    transform: translateX(-100%);
+  }
 }
 @keyframes infinity-scroll-right {
-from {
-  transform: translateX(-100%);
-}
+  from {
+    transform: translateX(-100%);
+  }
   to {
-  transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
-}
-
 
 @media (max-width: 767px) {
   p.main_top_slide_ja {
@@ -93,15 +92,15 @@ from {
     bottom: 4dvh;
     width: 70vw;
     transform: unset;
-}
+  }
 
-.slider-area {
+  .slider-area {
     width: 100%;
     height: 100%;
     position: relative;
     top: 0;
     left: 0;
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -205,8 +204,8 @@ span.border {
   margin: 0rem 2rem 0 0;
 }
 #mission_items h3 p:last-of-type {
-    margin-bottom: 0;
-    margin-top: 2rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
 
 .sentaku h3 {
@@ -218,7 +217,7 @@ span.border {
 #mission_items .flex .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;c
+  justify-content: space-between;
 }
 
 #mission_items .flex .right {
@@ -257,7 +256,7 @@ span.border {
 }
 
 /* NEWS */
-#b_n {
+#news_id {
   background-color: var(--gray);
 }
 
@@ -267,23 +266,23 @@ span.border {
 }
 
 .news_wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .news_twitter {
-	width: 40%;
-	margin-top: 8rem;
+  width: 40%;
+  margin-top: 8rem;
 }
 
 #news {
   margin-top: 8rem;
-	width: 100%;
+  width: 100%;
 }
 
 #news.page {
-	width: 100%;
+  width: 100%;
 }
 
 #news dl:nth-child(n + 7) {
@@ -323,7 +322,17 @@ span.border {
 #news dd .yaji {
   font-size: 1.3rem;
 }
+
+/* Introduction */
+.introduction_wrapper {
+  margin-top: 4rem;
+}
+
 /* BLOG */
+#b_n {
+  background-color: var(--gray);
+}
+
 .blogs {
   margin-top: 5rem;
 }
@@ -359,7 +368,7 @@ span.border {
 
 /* ãƒ¡ãƒ³ãƒãƒ¼æƒ…å ± */
 .member_info_wrap h2 {
-  background-color: #0f86ff;
+  background-color: var(--blue);
   line-height: 1;
   padding: 2rem;
   color: #fff;
@@ -557,7 +566,11 @@ span.border {
   opacity: 1;
 }
 
-/* ã‚°ãƒ«ãƒ¼ãƒ— */
+/* group */
+#group {
+  background-color: var(--white);
+}
+
 #group .flex {
   display: flex;
   justify-content: space-between;
@@ -644,7 +657,7 @@ span.border {
   object-fit: cover;
   left: 0;
   position: absolute;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .img-box {
@@ -698,7 +711,7 @@ button.toggle-btn {
   font-size: 1.3rem;
   border: 1px solid var(--black);
   transition: opacity 0.4s;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 .member-name {
   display: block;
@@ -902,7 +915,7 @@ button.toggle-btn {
     margin: 0;
   }
 
-  #mission_items h3 p:last-of-type{
+  #mission_items h3 p:last-of-type {
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
@@ -912,10 +925,10 @@ button.toggle-btn {
     flex-direction: column-reverse;
   }
 
-  .sentaku h3{
+  .sentaku h3 {
     margin-left: 0;
   }
-  
+
   .tanka,
   .sentaku,
   .hukuri {
@@ -936,36 +949,36 @@ button.toggle-btn {
 
   #news dt {
     font-size: 1.3rem;
-		width: 100%;
+    width: 100%;
   }
 
   #news dd {
     font-size: 1.3rem;
-		width: 80%;
+    width: 80%;
   }
 
-	#news dl dd:last-child {
+  #news dl dd:last-child {
     width: 4rem;
-    text-align: center;	
-	}
+    text-align: center;
+  }
 
   #news .content {
     margin: 1rem 0;
     width: 100%;
   }
 
-	.news_wrapper {
+  .news_wrapper {
     flex-direction: column-reverse;
-	}
+  }
 
-	.news_twitter {
-		width: 100%;
-		margin-top: 5rem;
-		max-height: 550px;
-	}
+  .news_twitter {
+    width: 100%;
+    margin-top: 5rem;
+    max-height: 550px;
+  }
 
   #news {
-		width: 100%;
+    width: 100%;
     margin-top: 3rem;
   }
 
@@ -987,7 +1000,7 @@ button.toggle-btn {
   }
   .blogs li {
     margin-bottom: 2.5%;
-}
+  }
 
   .blogs ul img {
     height: unset;
@@ -1112,7 +1125,7 @@ button.toggle-btn {
   .toggle-class {
     margin: 2.5rem 0;
   }
-  
+
   button.toggle-btn {
     font-size: 1.4rem;
   }

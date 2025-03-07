@@ -1,73 +1,410 @@
-/*モーダルを開くボタン*/
-.modal-open{
-  position: fixed;
+/* 画面表示箇所 */
+.step-content-flex {
   display: flex;
+  gap: 0 5rem;
   align-items: center;
   justify-content: center;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 50px;
-  font-weight: bold;
-  color: #fff;
-  background: #000;
-  margin: auto;
-  cursor: pointer;
-  transform: translate(-50%,-50%);
+  margin: 8rem auto 4rem;
+  max-width: 50rem;
 }
-/*モーダル本体の指定 + モーダル外側の背景の指定*/
-.modal-container{
+
+.step-content-flex .form-group {
+  width: 25rem;
+  margin: 0;
+}
+
+.button-group button {
+  /* background-color: var(--blue); */
+  /* color: var(--white); */
+  /* border: none; */
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s;
+  min-width: 15rem;
+  letter-spacing: 0.1rem;
+}
+
+.button-group button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* モーダルウィンドウのスタイル */
+.modal-content h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
-  background: var(--gray);
-  padding: 4rem;
-  overflow: auto;
+  background-color: var(--gray);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.modal-content {
+  background-color: var(--white);
+  width: 90%;
+  max-width: 70rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  position: relative;
   opacity: 0;
-  visibility: hidden;
-  transition: .3s;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  border: 1px solid var(--gray);
+}
+
+.modal-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #7f8c8d;
+}
+
+/* ステップバーのスタイル */
+.step-bar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 50rem;
+  margin: 4rem auto;
+}
+
+.step-bar::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #e0e0e0;
   z-index: 1;
 }
-/*モーダル本体の擬似要素の指定*/
-.modal-container:before{
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-/*モーダル本体に「active」クラス付与した時のスタイル*/
-.modal-container.active{
-  opacity: 1;
-  visibility: visible;
-}
-/*モーダル枠の指定*/
-.modal-body{
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 60rem;
-  width: 100%;
-}
-/*モーダルを閉じるボタンの指定*/
-.modal-close{
+
+.step-bar-progress {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 4rem;
-  right: 4rem;
+  top: 15px;
+  left: 0;
+  height: 3px;
+  background-color: #3498db;
+  z-index: 2;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.step {
   width: 4rem;
   height: 4rem;
-  font-size: 4rem;
-  color: var(--black);
-  cursor: pointer;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #7f8c8d;
+  position: relative;
+  z-index: 3;
 }
-/*モーダル内のコンテンツの指定*/
-.modal-content{
-  /* background: #fff; */
-  /* text-align: left; */
-  /* padding: 30px; */
+
+.step.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.step.complete {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.step-label {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 1.4rem;
+  color: #7f8c8d;
+}
+
+/* フォームのスタイル */
+.step-content {
+  display: none;
+  animation: fadeIn 0.5s forwards;
+}
+
+.step-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group {
+  margin-bottom: 2.5rem;
+  max-width: 50rem;
+  margin: 0 auto 2.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--blue);
+  padding-bottom: 0.5rem;
+}
+
+/* Safari-compatible select styling */
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 30px;
+  border: 1px solid #ddd;
+}
+
+/* Remove default arrow in IE */
+.form-group select::-ms-expand {
+  display: none;
+}
+
+/* Style focus state */
+.form-group select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 0 2rem;
+  margin-top: 3rem;
+}
+
+.button-group a {
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  display: inline-block;
+  width: 20rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.6rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.prev-button {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.calculate-button,
+.next-button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+}
+
+.restart-button {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+/* 結果表示のスタイル */
+.result {
+  margin-top: 8rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+.result p {
+  font-size: 1.6rem;
+}
+
+.salary {
+  margin: 2rem 0 0;
+  font-size: 1.6rem;
+}
+
+.salary #salary-amount {
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 3.2rem;
+  margin-right: 1rem;
+  border-bottom: 3px solid #e74c3c;
+  width: max-content;
+}
+
+.checkbox-group {
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  margin: 0.5rem auto 0;
+  background: var(--gray);
+  padding: 2rem 3rem;
+  justify-content: center;
+  border-radius: 0.8rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.checkbox-item label {
+  font-weight: normal;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: var(--black);
+}
+
+@media (max-width: 767px) {
+  .modal-content h2 {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  .step-label {
+    font-size: 1.2rem;
+    top: 3rem;
+  }
+
+  .step {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-group label {
+    font-size: 1.2rem;
+  }
+
+  .form-group select {
+    font-size: 1.2rem;
+  }
+
+  .button-group button {
+    font-size: 1.2rem;
+  }
+
+  .result p {
+    font-size: 1.4rem;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    margin: 3rem auto 0;
+  }
+
+  .button-group a {
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+  }
+
+  .step-content-flex {
+    gap: 0 1rem;
+    margin: 6rem auto 3rem;
+  }
+
+  .checkbox-group {
+    padding: 2rem 1rem;
+  }
+
+  .checkbox-item label {
+    font-size: 1rem;
+  }
+  .checkbox-item {
+    width: max-content;
+  }
+
+  .result {
+    margin-top: 6rem;
+  }
+
+  .salary #salary-amount {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.8rem;
+  }
+
+  .salary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }

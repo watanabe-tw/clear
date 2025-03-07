@@ -83,7 +83,7 @@ section#company_map {
 }
 
 .company_message_name_contents {
-  width: 42%;
+  width: 35%;
 }
 
 .company_message_info {
@@ -122,12 +122,12 @@ p.company_message_info_title {
   padding: 4rem 8rem 8rem;
 } */
 
-#co_info .title .en{
-	font-size: 5rem;
+#co_info .title .en {
+  font-size: 5rem;
 }
 
-#co_info .title .jp{
-	font-size: 3rem;
+#co_info .title .jp {
+  font-size: 3rem;
 }
 
 .info_flex {
@@ -156,7 +156,9 @@ p.company_message_info_title {
     margin-top: 10rem;
   }
 
-  .company_outline_wrap, .company_access_wrap,.organization_wrap{
+  .company_outline_wrap,
+  .company_access_wrap,
+  .organization_wrap {
     margin: 3.5rem auto 0;
   }
 
@@ -221,11 +223,11 @@ p.company_message_info_title {
     font-size: 1.2rem;
     margin: 5rem 0 0;
   }
-  #co_info .title .en{
+  #co_info .title .en {
     font-size: 2.4rem;
   }
-  
-  #co_info .title .jp{
+
+  #co_info .title .jp {
     font-size: 1.4rem;
   }
   .info_flex {

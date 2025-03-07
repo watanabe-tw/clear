@@ -41,6 +41,12 @@
 									<dd><a href="../assets/img/ir/clear_2023.pdf">確認する</a></dd>
 								</dl>
 							</li>
+							<li>
+								<dl>
+									<dt>第6期（2024年1月～2024年12月）分</dt>
+									<dd><a href="../assets/img/ir/clear_2024.pdf">確認する</a></dd>
+								</dl>
+							</li>
 						</ul>
 					</div>
 				</div>
